@@ -3,34 +3,37 @@ package com.api.testing.RestAssuredTest;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
-import com.api.testing.RestAssuredTest.base.*;
+import org.testng.annotations.*;
+import com.api.testing.RestAssuredTest.base.BaseTest;
 import com.api.testing.RestAssuredTest.utils.ConfigReader;
 import com.api.testing.RestAssuredTest.utils.ReportManager;
-
+import org.json.simple.JSONObject;
 import static io.restassured.RestAssured.*;
 
-import org.json.simple.JSONObject;
-
-public class AppTest extends BaseTest{
-    private String token;
+public class AppTest extends BaseTest {
     private String baseUrl;
     private int bookId; // Store book ID for request chaining
 
     @BeforeClass
     public void setup() {
-        baseUrl = ConfigReader.getProperty("base.url");
+        String env = System.getProperty("env", ConfigReader.getProperty("env", "local"));  
+        baseUrl = ConfigReader.getProperty("base.url." + env, "http://127.0.0.1:8000");
+
+        if (baseUrl == null || baseUrl.isEmpty()) {
+            throw new IllegalStateException("❌ ERROR: base.url is not set. Check config.properties.");
+        }
+
         RestAssured.baseURI = baseUrl;
         ReportManager.startTest("API Automation Test");
+
+        System.out.println("✅ API running on: " + baseUrl);
     }
+
     @AfterClass
     public void tearDown() {
         ReportManager.endTest();
+        System.out.println("🛑 API Tests Execution Completed.");
     }
 
     @Test(priority = 1)
@@ -48,7 +51,7 @@ public class AppTest extends BaseTest{
                 .statusCode(200)
                 .extract().response();
 
-        ReportManager.logInfo("User Signup Response: " + response.asString());
+        ReportManager.logInfo("✅ User Signup Response: " + response.asString());
     }
 
     @Test(priority = 2)
@@ -67,8 +70,9 @@ public class AppTest extends BaseTest{
                 .extract().response();
 
         token = response.jsonPath().getString("access_token");
-        BaseTest.setToken(token); 
-        ReportManager.logInfo("User Login Response: " + response.asString());
+        setToken(token);
+
+        ReportManager.logInfo("✅ User Login Response: " + response.asString());
     }
 
     @Test(priority = 3, dependsOnMethods = "testUserLogin")
@@ -89,8 +93,8 @@ public class AppTest extends BaseTest{
                 .statusCode(200)
                 .extract().response();
 
-        bookId = response.jsonPath().getInt("id"); // Store book ID
-        ReportManager.logInfo("Book Created: " + response.asString());
+        bookId = response.jsonPath().getInt("id");
+        ReportManager.logInfo("✅ Book Created: " + response.asString());
     }
 
     @Test(priority = 4, dependsOnMethods = "testCreateBook")
@@ -103,7 +107,7 @@ public class AppTest extends BaseTest{
                 .statusCode(200)
                 .extract().response();
 
-        ReportManager.logInfo("Get Book Response: " + response.asString());
+        ReportManager.logInfo("✅ Get Book Response: " + response.asString());
     }
 
     @Test(priority = 5, dependsOnMethods = "testGetBookById")
@@ -116,8 +120,9 @@ public class AppTest extends BaseTest{
                 .statusCode(200)
                 .extract().response();
 
-        ReportManager.logInfo("Delete Book Response: " + response.asString());
+        ReportManager.logInfo("✅ Book Deleted Response: " + response.asString());
     }
+
     @Test(priority = 6)
     public void testInvalidLogin() {
         JSONObject request = new JSONObject();
@@ -133,7 +138,7 @@ public class AppTest extends BaseTest{
                 .statusCode(400)
                 .extract().response();
 
-        ReportManager.logInfo("Invalid Login Response: " + response.asString());
+        ReportManager.logInfo("❌ Invalid Login Response: " + response.asString());
     }
 
     @Test(priority = 7)
@@ -146,8 +151,9 @@ public class AppTest extends BaseTest{
                 .statusCode(403) 
                 .extract().response();
 
-        ReportManager.logInfo("Unauthorized Access Response: " + response.asString());
+        ReportManager.logInfo("❌ Unauthorized Access Response: " + response.asString());
     }
+
     @DataProvider(name = "bookData")
     public Object[][] bookDataProvider() {
         return new Object[][]{
@@ -175,8 +181,9 @@ public class AppTest extends BaseTest{
                 .statusCode(200)
                 .extract().response();
 
-        ReportManager.logInfo("Created Book Response: " + response.asString());
+        ReportManager.logInfo("✅ Created Book Response: " + response.asString());
     }
+
     @Test(priority = 9)
     public void testSignupWithExistingEmail() {
         JSONObject request = new JSONObject();
@@ -189,16 +196,16 @@ public class AppTest extends BaseTest{
             .when()
                 .post("/signup")
             .then()
-                .statusCode(400)  // Expected to fail
+                .statusCode(400)  
                 .extract().response();
 
-        ReportManager.logInfo("Duplicate Signup Response: " + response.asString());
+        ReportManager.logInfo("❌ Duplicate Signup Response: " + response.asString());
     }
     
     @Test(priority = 10)
     public void testLoginWithIncorrectPassword() {
         JSONObject request = new JSONObject();
-        request.put("email", "dummy32@example.com"); // Existing user
+        request.put("email", "dummy32@example.com");
         request.put("password", "wrongpassword");
 
         Response response = given()
@@ -207,25 +214,22 @@ public class AppTest extends BaseTest{
             .when()
                 .post("/login")
             .then()
-                .statusCode(400)  // Unauthorized
+                .statusCode(400)  
                 .extract().response();
 
-        ReportManager.logInfo("Login with Wrong Password Response: " + response.asString());
+        ReportManager.logInfo("❌ Login with Wrong Password Response: " + response.asString());
     }
     
-    @Test(priority = 12)
+    @Test(priority = 11)
     public void testGetBookWithInvalidId() {
         Response response = given()
                 .header("Authorization", "Bearer " + token)
             .when()
-                .get("/books/99999999") // Assume this ID does not exist
+                .get("/books/99999999") 
             .then()
-                .statusCode(404) // Not Found
+                .statusCode(404) 
                 .extract().response();
 
-        ReportManager.logInfo("Get Book with Invalid ID Response: " + response.asString());
+        ReportManager.logInfo("❌ Get Book with Invalid ID Response: " + response.asString());
     }
-
-
-
 }

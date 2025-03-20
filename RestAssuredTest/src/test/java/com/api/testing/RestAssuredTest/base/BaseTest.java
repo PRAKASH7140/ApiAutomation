@@ -12,8 +12,14 @@ public class BaseTest {
     @BeforeClass
     public void setup() {
         try {
-            RestAssured.baseURI = ConfigReader.getProperty("base.url");
-            ReportManager.startTest(getClass().getSimpleName()); // Start report per class
+            // Get environment (local or CI/CD)
+            String env = System.getProperty("env", ConfigReader.getProperty("env", "local")); 
+            String baseUrl = ConfigReader.getProperty("base.url." + env, "http://127.0.0.1:8000"); 
+
+            RestAssured.baseURI = baseUrl;
+            ReportManager.startTest(getClass().getSimpleName());
+
+            System.out.println("✅ API Environment: " + env);
             System.out.println("✅ Base URI set to: " + RestAssured.baseURI);
         } catch (Exception e) {
             System.err.println("❌ Error setting up Base URI: " + e.getMessage());
@@ -24,22 +30,29 @@ public class BaseTest {
         if (token == null || token.isEmpty()) { 
             token = accessToken;
             System.out.println("🔑 Token initialized successfully.");
+        } else {
+            System.out.println("🔄 Token already set, reusing existing session.");
         }
     }
 
     @AfterMethod
     public void logTestResult(ITestResult result) {
-        if (result.getStatus() == ITestResult.FAILURE) {
-            ReportManager.logError("❌ FAILED: " + result.getName() + " - " + result.getThrowable());
-        } else if (result.getStatus() == ITestResult.SUCCESS) {
-            ReportManager.logPass("✅ PASSED: " + result.getName());
-        } else if (result.getStatus() == ITestResult.SKIP) {
-            ReportManager.logSkip("⚠️ SKIPPED: " + result.getName());
+        switch (result.getStatus()) {
+            case ITestResult.FAILURE:
+                ReportManager.logError("❌ FAILED: " + result.getName() + " - " + result.getThrowable());
+                break;
+            case ITestResult.SUCCESS:
+                ReportManager.logPass("✅ PASSED: " + result.getName());
+                break;
+            case ITestResult.SKIP:
+                ReportManager.logSkip("⚠️ SKIPPED: " + result.getName());
+                break;
         }
     }
 
     @AfterClass
     public void tearDown() {
         ReportManager.endTest();
+        System.out.println("🛑 Test Execution Completed.");
     }
 }

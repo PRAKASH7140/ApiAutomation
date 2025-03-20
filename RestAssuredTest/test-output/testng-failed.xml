@@ -5,10 +5,19 @@
     <classes>
       <class name="com.api.testing.RestAssuredTest.AppTest">
         <methods>
+          <include name="testGetBookWithInvalidId"/>
           <include name="testLoginWithIncorrectPassword"/>
           <include name="setup"/>
-          <include name="tearDown"/>
+          <include name="testDeleteBook"/>
+          <include name="testCreateBook"/>
+          <include name="testUnauthorizedAccess"/>
+          <include name="testUserLogin"/>
           <include name="logTestResult"/>
+          <include name="testInvalidLogin"/>
+          <include name="tearDown"/>
+          <include name="testCreateMultipleBooks" invocation-numbers="0 1 2"/>
+          <include name="testGetBookById"/>
+          <include name="testUserSignup"/>
           <include name="testSignupWithExistingEmail"/>
         </methods>
       </class> <!-- com.api.testing.RestAssuredTest.AppTest -->
