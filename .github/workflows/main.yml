@@ -26,11 +26,6 @@ jobs:
           java-version: '17'
           cache: 'maven'
 
-      - name: Install Dependencies
-        run: |
-          cd RestAssuredTest  # Ensure we are in the correct project folder
-          mvn clean install -DskipTests
-
       - name: Run API Tests
         run: |
           cd RestAssuredTest  # Ensure mvn test runs inside the correct folder
