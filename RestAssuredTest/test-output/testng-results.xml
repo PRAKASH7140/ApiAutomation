@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-03-19T19:58:20 IST" name="Default suite" finished-at="2025-03-19T19:58:29 IST" duration-ms="9082">
+    <groups>
+    </groups>
+    <test started-at="2025-03-19T19:58:20 IST" name="Default test" finished-at="2025-03-19T19:58:29 IST" duration-ms="9082">
+      <class name="com.api.testing.RestAssuredTest.AppTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.testing.RestAssuredTest.AppTest@305b7c14]" started-at="2025-03-19T19:58:20 IST" name="setup" finished-at="2025-03-19T19:58:21 IST" duration-ms="1199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testUserSignup()[pri:1, instance:com.api.testing.RestAssuredTest.AppTest@305b7c14]" started-at="2025-03-19T19:58:22 IST" name="testUserSignup" finished-at="2025-03-19T19:58:25 IST" duration-ms="3122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUserSignup -->
+        <test-method signature="testUserLogin()[pri:2, instance:com.api.testing.RestAssuredTest.AppTest@305b7c14]" started-at="2025-03-19T19:58:25 IST" name="testUserLogin" finished-at="2025-03-19T19:58:27 IST" duration-ms="1856" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUserLogin -->
+        <test-method signature="testCreateBook()[pri:3, instance:com.api.testing.RestAssuredTest.AppTest@305b7c14]" started-at="2025-03-19T19:58:27 IST" name="testCreateBook" finished-at="2025-03-19T19:58:27 IST" depends-on-methods="com.api.testing.RestAssuredTest.AppTest.testUserLogin" duration-ms="83" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateBook -->
+        <test-method signature="testGetBookById()[pri:4, instance:com.api.testing.RestAssuredTest.AppTest@305b7c14]" started-at="2025-03-19T19:58:27 IST" name="testGetBookById" finished-at="2025-03-19T19:58:27 IST" depends-on-methods="com.api.testing.RestAssuredTest.AppTest.testCreateBook" duration-ms="61" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetBookById -->
+        <test-method signature="testDeleteBook()[pri:5, instance:com.api.testing.RestAssuredTest.AppTest@305b7c14]" started-at="2025-03-19T19:58:27 IST" name="testDeleteBook" finished-at="2025-03-19T19:58:27 IST" depends-on-methods="com.api.testing.RestAssuredTest.AppTest.testGetBookById" duration-ms="40" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteBook -->
+        <test-method signature="testInvalidLogin()[pri:6, instance:com.api.testing.RestAssuredTest.AppTest@305b7c14]" started-at="2025-03-19T19:58:27 IST" name="testInvalidLogin" finished-at="2025-03-19T19:58:27 IST" duration-ms="28" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidLogin -->
+        <test-method signature="testUnauthorizedAccess()[pri:7, instance:com.api.testing.RestAssuredTest.AppTest@305b7c14]" started-at="2025-03-19T19:58:27 IST" name="testUnauthorizedAccess" finished-at="2025-03-19T19:58:27 IST" duration-ms="23" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUnauthorizedAccess -->
+        <test-method signature="testCreateMultipleBooks(java.lang.String,java.lang.String,int,java.lang.String)[pri:8, instance:com.api.testing.RestAssuredTest.AppTest@305b7c14]" started-at="2025-03-19T19:58:27 IST" name="testCreateMultipleBooks" data-provider="bookData" finished-at="2025-03-19T19:58:27 IST" duration-ms="36" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Book 1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Author 1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2001]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Summary 1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateMultipleBooks -->
+        <test-method signature="testCreateMultipleBooks(java.lang.String,java.lang.String,int,java.lang.String)[pri:8, instance:com.api.testing.RestAssuredTest.AppTest@305b7c14]" started-at="2025-03-19T19:58:27 IST" name="testCreateMultipleBooks" data-provider="bookData" finished-at="2025-03-19T19:58:27 IST" duration-ms="34" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Book 2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Author 2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2002]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Summary 2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateMultipleBooks -->
+        <test-method signature="testCreateMultipleBooks(java.lang.String,java.lang.String,int,java.lang.String)[pri:8, instance:com.api.testing.RestAssuredTest.AppTest@305b7c14]" started-at="2025-03-19T19:58:27 IST" name="testCreateMultipleBooks" data-provider="bookData" finished-at="2025-03-19T19:58:27 IST" duration-ms="41" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Book 3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Author 3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2003]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Summary 3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateMultipleBooks -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.api.testing.RestAssuredTest.AppTest@305b7c14]" started-at="2025-03-19T19:58:27 IST" name="tearDown" finished-at="2025-03-19T19:58:29 IST" duration-ms="2427" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.api.testing.RestAssuredTest.AppTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
