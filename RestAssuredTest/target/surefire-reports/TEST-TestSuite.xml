@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="10.654" tests="10" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="23"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="sun.awt.enableExtraMouseButtons" value="true"/>
+    <property name="java.class.path" value="C:\Users\Prem\eclipse-workspace\RestAssuredTest\target\test-classes;C:\Users\Prem\eclipse-workspace\RestAssuredTest\target\classes;C:\Users\Prem\.m2\repository\io\rest-assured\rest-assured\5.3.0\rest-assured-5.3.0.jar;C:\Users\Prem\.m2\repository\org\apache\groovy\groovy\4.0.6\groovy-4.0.6.jar;C:\Users\Prem\.m2\repository\org\apache\groovy\groovy-xml\4.0.6\groovy-xml-4.0.6.jar;C:\Users\Prem\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Prem\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Prem\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Prem\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Prem\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Prem\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\Prem\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Prem\.m2\repository\io\rest-assured\json-path\5.3.0\json-path-5.3.0.jar;C:\Users\Prem\.m2\repository\org\apache\groovy\groovy-json\4.0.6\groovy-json-4.0.6.jar;C:\Users\Prem\.m2\repository\io\rest-assured\rest-assured-common\5.3.0\rest-assured-common-5.3.0.jar;C:\Users\Prem\.m2\repository\io\rest-assured\xml-path\5.3.0\xml-path-5.3.0.jar;C:\Users\Prem\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Prem\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\Prem\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Prem\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\Prem\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\Prem\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar;C:\Users\Prem\.m2\repository\junit\junit\4.10\junit-4.10.jar;C:\Users\Prem\.m2\repository\org\hamcrest\hamcrest-core\1.1\hamcrest-core-1.1.jar;C:\Users\Prem\.m2\repository\com\aventstack\extentreports\4.1.7\extentreports-4.1.7.jar;C:\Users\Prem\.m2\repository\org\freemarker\freemarker\2.3.29\freemarker-2.3.29.jar;C:\Users\Prem\.m2\repository\org\mongodb\mongodb-driver\3.12.0\mongodb-driver-3.12.0.jar;C:\Users\Prem\.m2\repository\org\mongodb\mongodb-driver-core\3.12.0\mongodb-driver-core-3.12.0.jar;C:\Users\Prem\.m2\repository\org\mongodb\bson\3.12.0\bson-3.12.0.jar;C:\Users\Prem\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;C:\Users\Prem\.m2\repository\org\slf4j\slf4j-simple\2.0.9\slf4j-simple-2.0.9.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="23"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Users\Prem\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_23.0.1.v20241024-1700\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\Prem\AppData\Local\Temp\surefire7939722427459707306\surefirebooter-20250321002427260_3.jar C:\Users\Prem\AppData\Local\Temp\surefire7939722427459707306 2025-03-21T00-24-26_309-jvmRun1 surefire-20250321002427260_1tmp surefire_0-20250321002427260_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Prem\eclipse-workspace\RestAssuredTest\target\test-classes;C:\Users\Prem\eclipse-workspace\RestAssuredTest\target\classes;C:\Users\Prem\.m2\repository\io\rest-assured\rest-assured\5.3.0\rest-assured-5.3.0.jar;C:\Users\Prem\.m2\repository\org\apache\groovy\groovy\4.0.6\groovy-4.0.6.jar;C:\Users\Prem\.m2\repository\org\apache\groovy\groovy-xml\4.0.6\groovy-xml-4.0.6.jar;C:\Users\Prem\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Prem\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Prem\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Prem\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Prem\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Prem\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\Prem\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Prem\.m2\repository\io\rest-assured\json-path\5.3.0\json-path-5.3.0.jar;C:\Users\Prem\.m2\repository\org\apache\groovy\groovy-json\4.0.6\groovy-json-4.0.6.jar;C:\Users\Prem\.m2\repository\io\rest-assured\rest-assured-common\5.3.0\rest-assured-common-5.3.0.jar;C:\Users\Prem\.m2\repository\io\rest-assured\xml-path\5.3.0\xml-path-5.3.0.jar;C:\Users\Prem\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Prem\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\Prem\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Prem\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\Prem\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\Prem\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar;C:\Users\Prem\.m2\repository\junit\junit\4.10\junit-4.10.jar;C:\Users\Prem\.m2\repository\org\hamcrest\hamcrest-core\1.1\hamcrest-core-1.1.jar;C:\Users\Prem\.m2\repository\com\aventstack\extentreports\4.1.7\extentreports-4.1.7.jar;C:\Users\Prem\.m2\repository\org\freemarker\freemarker\2.3.29\freemarker-2.3.29.jar;C:\Users\Prem\.m2\repository\org\mongodb\mongodb-driver\3.12.0\mongodb-driver-3.12.0.jar;C:\Users\Prem\.m2\repository\org\mongodb\mongodb-driver-core\3.12.0\mongodb-driver-core-3.12.0.jar;C:\Users\Prem\.m2\repository\org\mongodb\bson\3.12.0\bson-3.12.0.jar;C:\Users\Prem\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;C:\Users\Prem\.m2\repository\org\slf4j\slf4j-simple\2.0.9\slf4j-simple-2.0.9.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Prem"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-10-15"/>
+    <property name="java.home" value="C:\Users\Prem\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_23.0.1.v20241024-1700\jre"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Prem\eclipse-workspace\RestAssuredTest"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Prem\AppData\Local\Temp\surefire7939722427459707306\surefirebooter-20250321002427260_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="23.0.1+11"/>
+    <property name="user.name" value="Prem"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-23.0.1+11"/>
+    <property name="localRepository" value="C:\Users\Prem\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\Prem\AppData\Local\Temp\"/>
+    <property name="java.version" value="23.0.1"/>
+    <property name="user.dir" value="C:\Users\Prem\eclipse-workspace\RestAssuredTest"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\Prem\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_23.0.1.v20241024-1700\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/Prem/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_23.0.1.v20241024-1700/jre/bin/server;C:/Users/Prem/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_23.0.1.v20241024-1700/jre/bin;C:\Users\Prem\Downloads\mysql-connector-c++-9.2.0-winx64\mysql-connector-c++-9.2.0-winx64\include;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;E:\Java_jar\apache-maven-3.9.9-bin\apache-maven-3.9.9\bin;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\Program Files\CMake\bin;C:\Users\Prem\Downloads\ffmpeg-7.1-full_build\ffmpeg-7.1-full_build\bin;C:\Users\Prem\Downloads\mysql-connector-c++-9.2.0-winx64\mysql-connector-c++-9.2.0-winx64\lib;C:\Users\Prem\Downloads\mysql-connector-c++-9.2.0-winx64\mysql-connector-c++-9.2.0-winx64\bin;C:\php-8.1.32-Win32-vs16-x64;C:\Program Files\Java\jdk-17\bin;C:\Users\Prem\.cargo\bin;C:\Users\Prem\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\Prem\AppData\Local\Programs\Python\Python38\;C:\Users\Prem\AppData\Local\Microsoft\WindowsApps;C:\Users\Prem\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.2.4\bin;;C:\Users\Prem\AppData\Local\Programs\mongosh\;C:\Users\Prem\composer;C:\Users\Prem\AppData\Roaming\Composer\vendor\bin;C:\Users\Prem\.dotnet\tools;C:\Users\Prem\AppData\Roaming\npm;C:\WINDOWS\System32;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="23.0.1+11"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="67.0"/>
+  </properties>
+  <testcase name="testUserSignup" classname="com.api.testing.RestAssuredTest.AppTest" time="3.154"/>
+  <testcase name="testUserLogin" classname="com.api.testing.RestAssuredTest.AppTest" time="1.914">
+    <system-out><![CDATA[🔑 Token initialized successfully.
+]]></system-out>
+  </testcase>
+  <testcase name="testCreateBook" classname="com.api.testing.RestAssuredTest.AppTest" time="0.123"/>
+  <testcase name="testGetBookById" classname="com.api.testing.RestAssuredTest.AppTest" time="0.083"/>
+  <testcase name="testDeleteBook" classname="com.api.testing.RestAssuredTest.AppTest" time="0.045"/>
+  <testcase name="testInvalidLogin" classname="com.api.testing.RestAssuredTest.AppTest" time="0.027"/>
+  <testcase name="testUnauthorizedAccess" classname="com.api.testing.RestAssuredTest.AppTest" time="0.022"/>
+  <testcase name="testCreateMultipleBooks[Book 4, Author 1, 2001, Summary 1](1)" classname="com.api.testing.RestAssuredTest.AppTest" time="0.039"/>
+  <testcase name="testCreateMultipleBooks[Book 2, Author 2, 2002, Summary 2](2)" classname="com.api.testing.RestAssuredTest.AppTest" time="0.031"/>
+  <testcase name="testCreateMultipleBooks[Book 3, Author 3, 2003, Summary 3](3)" classname="com.api.testing.RestAssuredTest.AppTest" time="0.033"/>
+</testsuite>

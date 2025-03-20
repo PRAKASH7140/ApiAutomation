@@ -1,0 +1,4 @@
+com\api\testing\RestAssuredTest\base\BaseTest.class
+com\api\testing\RestAssuredTest\utils\ReportManager.class
+com\api\testing\RestAssuredTest\AppTest.class
+com\api\testing\RestAssuredTest\utils\ConfigReader.class

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="13" passed="13" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-03-21T00:28:35 IST" name="Default suite" finished-at="2025-03-21T00:28:45 IST" duration-ms="10194">
+    <groups>
+    </groups>
+    <test started-at="2025-03-21T00:28:35 IST" name="Default test" finished-at="2025-03-21T00:28:45 IST" duration-ms="10194">
+      <class name="com.api.testing.RestAssuredTest.AppTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.testing.RestAssuredTest.AppTest@22fcf7ab]" started-at="2025-03-21T00:28:35 IST" name="setup" finished-at="2025-03-21T00:28:36 IST" duration-ms="1284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testUserSignup()[pri:1, instance:com.api.testing.RestAssuredTest.AppTest@22fcf7ab]" started-at="2025-03-21T00:28:36 IST" name="testUserSignup" finished-at="2025-03-21T00:28:39 IST" duration-ms="3139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUserSignup -->
+        <test-method is-config="true" signature="logTestResult(org.testng.ITestResult)[pri:0, instance:com.api.testing.RestAssuredTest.AppTest@22fcf7ab]" started-at="2025-03-21T00:28:39 IST" name="logTestResult" finished-at="2025-03-21T00:28:39 IST" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testUserSignup status=SUCCESS method=AppTest.testUserSignup()[pri:1, instance:com.api.testing.RestAssuredTest.AppTest@22fcf7ab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestResult -->
+        <test-method signature="testUserLogin()[pri:2, instance:com.api.testing.RestAssuredTest.AppTest@22fcf7ab]" started-at="2025-03-21T00:28:39 IST" name="testUserLogin" finished-at="2025-03-21T00:28:41 IST" duration-ms="1991" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUserLogin -->
+        <test-method is-config="true" signature="logTestResult(org.testng.ITestResult)[pri:0, instance:com.api.testing.RestAssuredTest.AppTest@22fcf7ab]" started-at="2025-03-21T00:28:41 IST" name="logTestResult" finished-at="2025-03-21T00:28:41 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testUserLogin status=SUCCESS method=AppTest.testUserLogin()[pri:2, instance:com.api.testing.RestAssuredTest.AppTest@22fcf7ab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestResult -->
+        <test-method signature="testCreateBook()[pri:3, instance:com.api.testing.RestAssuredTest.AppTest@22fcf7ab]" started-at="2025-03-21T00:28:41 IST" name="testCreateBook" finished-at="2025-03-21T00:28:42 IST" depends-on-methods="com.api.testing.RestAssuredTest.AppTest.testUserLogin" duration-ms="108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateBook -->
+        <test-method is-config="true" signature="logTestResult(org.testng.ITestResult)[pri:0, instance:com.api.testing.RestAssuredTest.AppTest@22fcf7ab]" started-at="2025-03-21T00:28:42 IST" name="logTestResult" finished-at="2025-03-21T00:28:42 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCreateBook status=SUCCESS method=AppTest.testCreateBook()[pri:3, instance:com.api.testing.RestAssuredTest.AppTest@22fcf7ab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestResult -->
+        <test-method signature="testGetBookById()[pri:4, instance:com.api.testing.RestAssuredTest.AppTest@22fcf7ab]" started-at="2025-03-21T00:28:42 IST" name="testGetBookById" finished-at="2025-03-21T00:28:42 IST" depends-on-methods="com.api.testing.RestAssuredTest.AppTest.testCreateBook" duration-ms="84" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetBookById -->
+        <test-method is-config="true" signature="logTestResult(org.testng.ITestResult)[pri:0, instance:com.api.testing.RestAssuredTest.AppTest@22fcf7ab]" started-at="2025-03-21T00:28:42 IST" name="logTestResult" finished-at="2025-03-21T00:28:42 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testGetBookById status=SUCCESS method=AppTest.testGetBookById()[pri:4, instance:com.api.testing.RestAssuredTest.AppTest@22fcf7ab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestResult -->
+        <test-method signature="testDeleteBook()[pri:5, instance:com.api.testing.RestAssuredTest.AppTest@22fcf7ab]" started-at="2025-03-21T00:28:42 IST" name="testDeleteBook" finished-at="2025-03-21T00:28:42 IST" depends-on-methods="com.api.testing.RestAssuredTest.AppTest.testGetBookById" duration-ms="45" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteBook -->
+        <test-method is-config="true" signature="logTestResult(org.testng.ITestResult)[pri:0, instance:com.api.testing.RestAssuredTest.AppTest@22fcf7ab]" started-at="2025-03-21T00:28:42 IST" name="logTestResult" finished-at="2025-03-21T00:28:42 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testDeleteBook status=SUCCESS method=AppTest.testDeleteBook()[pri:5, instance:com.api.testing.RestAssuredTest.AppTest@22fcf7ab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestResult -->
+        <test-method signature="testInvalidLogin()[pri:6, instance:com.api.testing.RestAssuredTest.AppTest@22fcf7ab]" started-at="2025-03-21T00:28:42 IST" name="testInvalidLogin" finished-at="2025-03-21T00:28:42 IST" duration-ms="45" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidLogin -->
+        <test-method is-config="true" signature="logTestResult(org.testng.ITestResult)[pri:0, instance:com.api.testing.RestAssuredTest.AppTest@22fcf7ab]" started-at="2025-03-21T00:28:42 IST" name="logTestResult" finished-at="2025-03-21T00:28:42 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testInvalidLogin status=SUCCESS method=AppTest.testInvalidLogin()[pri:6, instance:com.api.testing.RestAssuredTest.AppTest@22fcf7ab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestResult -->
+        <test-method signature="testUnauthorizedAccess()[pri:7, instance:com.api.testing.RestAssuredTest.AppTest@22fcf7ab]" started-at="2025-03-21T00:28:42 IST" name="testUnauthorizedAccess" finished-at="2025-03-21T00:28:42 IST" duration-ms="25" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUnauthorizedAccess -->
+        <test-method is-config="true" signature="logTestResult(org.testng.ITestResult)[pri:0, instance:com.api.testing.RestAssuredTest.AppTest@22fcf7ab]" started-at="2025-03-21T00:28:42 IST" name="logTestResult" finished-at="2025-03-21T00:28:42 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testUnauthorizedAccess status=SUCCESS method=AppTest.testUnauthorizedAccess()[pri:7, instance:com.api.testing.RestAssuredTest.AppTest@22fcf7ab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestResult -->
+        <test-method signature="testCreateMultipleBooks(java.lang.String,java.lang.String,int,java.lang.String)[pri:8, instance:com.api.testing.RestAssuredTest.AppTest@22fcf7ab]" started-at="2025-03-21T00:28:42 IST" name="testCreateMultipleBooks" data-provider="bookData" finished-at="2025-03-21T00:28:42 IST" duration-ms="52" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Book 4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Author 1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2001]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Summary 1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateMultipleBooks -->
+        <test-method is-config="true" signature="logTestResult(org.testng.ITestResult)[pri:0, instance:com.api.testing.RestAssuredTest.AppTest@22fcf7ab]" started-at="2025-03-21T00:28:42 IST" name="logTestResult" finished-at="2025-03-21T00:28:42 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCreateMultipleBooks status=SUCCESS method=AppTest.testCreateMultipleBooks(java.lang.String,java.lang.String,int,java.lang.String)[pri:8, instance:com.api.testing.RestAssuredTest.AppTest@22fcf7ab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestResult -->
+        <test-method signature="testCreateMultipleBooks(java.lang.String,java.lang.String,int,java.lang.String)[pri:8, instance:com.api.testing.RestAssuredTest.AppTest@22fcf7ab]" started-at="2025-03-21T00:28:42 IST" name="testCreateMultipleBooks" data-provider="bookData" finished-at="2025-03-21T00:28:42 IST" duration-ms="46" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Book 2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Author 2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2002]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Summary 2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateMultipleBooks -->
+        <test-method is-config="true" signature="logTestResult(org.testng.ITestResult)[pri:0, instance:com.api.testing.RestAssuredTest.AppTest@22fcf7ab]" started-at="2025-03-21T00:28:42 IST" name="logTestResult" finished-at="2025-03-21T00:28:42 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCreateMultipleBooks status=SUCCESS method=AppTest.testCreateMultipleBooks(java.lang.String,java.lang.String,int,java.lang.String)[pri:8, instance:com.api.testing.RestAssuredTest.AppTest@22fcf7ab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestResult -->
+        <test-method signature="testCreateMultipleBooks(java.lang.String,java.lang.String,int,java.lang.String)[pri:8, instance:com.api.testing.RestAssuredTest.AppTest@22fcf7ab]" started-at="2025-03-21T00:28:42 IST" name="testCreateMultipleBooks" data-provider="bookData" finished-at="2025-03-21T00:28:42 IST" duration-ms="46" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Book 3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Author 3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2003]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Summary 3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateMultipleBooks -->
+        <test-method is-config="true" signature="logTestResult(org.testng.ITestResult)[pri:0, instance:com.api.testing.RestAssuredTest.AppTest@22fcf7ab]" started-at="2025-03-21T00:28:42 IST" name="logTestResult" finished-at="2025-03-21T00:28:42 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCreateMultipleBooks status=SUCCESS method=AppTest.testCreateMultipleBooks(java.lang.String,java.lang.String,int,java.lang.String)[pri:8, instance:com.api.testing.RestAssuredTest.AppTest@22fcf7ab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestResult -->
+        <test-method signature="testSignupWithExistingEmail()[pri:9, instance:com.api.testing.RestAssuredTest.AppTest@22fcf7ab]" started-at="2025-03-21T00:28:42 IST" name="testSignupWithExistingEmail" finished-at="2025-03-21T00:28:42 IST" duration-ms="32" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignupWithExistingEmail -->
+        <test-method is-config="true" signature="logTestResult(org.testng.ITestResult)[pri:0, instance:com.api.testing.RestAssuredTest.AppTest@22fcf7ab]" started-at="2025-03-21T00:28:42 IST" name="logTestResult" finished-at="2025-03-21T00:28:42 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testSignupWithExistingEmail status=SUCCESS method=AppTest.testSignupWithExistingEmail()[pri:9, instance:com.api.testing.RestAssuredTest.AppTest@22fcf7ab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestResult -->
+        <test-method signature="testLoginWithIncorrectPassword()[pri:10, instance:com.api.testing.RestAssuredTest.AppTest@22fcf7ab]" started-at="2025-03-21T00:28:42 IST" name="testLoginWithIncorrectPassword" finished-at="2025-03-21T00:28:43 IST" duration-ms="707" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithIncorrectPassword -->
+        <test-method is-config="true" signature="logTestResult(org.testng.ITestResult)[pri:0, instance:com.api.testing.RestAssuredTest.AppTest@22fcf7ab]" started-at="2025-03-21T00:28:43 IST" name="logTestResult" finished-at="2025-03-21T00:28:43 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLoginWithIncorrectPassword status=SUCCESS method=AppTest.testLoginWithIncorrectPassword()[pri:10, instance:com.api.testing.RestAssuredTest.AppTest@22fcf7ab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestResult -->
+        <test-method signature="testGetBookWithInvalidId()[pri:12, instance:com.api.testing.RestAssuredTest.AppTest@22fcf7ab]" started-at="2025-03-21T00:28:43 IST" name="testGetBookWithInvalidId" finished-at="2025-03-21T00:28:43 IST" duration-ms="41" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetBookWithInvalidId -->
+        <test-method is-config="true" signature="logTestResult(org.testng.ITestResult)[pri:0, instance:com.api.testing.RestAssuredTest.AppTest@22fcf7ab]" started-at="2025-03-21T00:28:43 IST" name="logTestResult" finished-at="2025-03-21T00:28:43 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testGetBookWithInvalidId status=SUCCESS method=AppTest.testGetBookWithInvalidId()[pri:12, instance:com.api.testing.RestAssuredTest.AppTest@22fcf7ab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.api.testing.RestAssuredTest.AppTest@22fcf7ab]" started-at="2025-03-21T00:28:43 IST" name="tearDown" finished-at="2025-03-21T00:28:45 IST" duration-ms="2372" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.api.testing.RestAssuredTest.AppTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
